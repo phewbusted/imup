@@ -1,4 +1,3 @@
-
 // =====================================
 // PASSWORD
 // =====================================
@@ -284,6 +283,9 @@ document.getElementById("modal");
 const modalImg =
 document.getElementById("modalImg");
 
+const closeModal =
+document.getElementById("closeModal");
+
 if (photo && modal && modalImg) {
 
     photo.addEventListener(
@@ -304,9 +306,11 @@ if (photo && modal && modalImg) {
 
     "click",
 
-    () => {
+    (e) => {
 
-        modal.style.display = "none";
+        if (e.target === modal || e.target === closeModal) {
+            modal.style.display = "none";
+        }
 
     }
 
@@ -396,4 +400,3 @@ window.addEventListener(
 }
 
 );
-```
