@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,136 +8,167 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <section class="letter-section fade">
+    <!-- STARS BACKGROUND -->
+    <div id="stars"></div>
 
-        <div class="letter-card">
+    <!-- LOCK SCREEN -->
+    <div id="lock-screen">
+        <div class="lock-card">
+            <h1>🔐 Masukkan Password</h1>
+            <input 
+                type="password" 
+                id="password" 
+                placeholder="password..." 
+                onkeypress="if(event.key==='Enter') checkPassword()">
+            <button onclick="checkPassword()">Unlock ♡</button>
+        </div>
+    </div>
 
-            <h2>☆ Happy Birthday Sayangg ☆</h2>
+    <!-- MAIN CONTENT -->
+    <div id="content" style="display: none;">
 
+        <!-- COUNTDOWN SECTION -->
+        <section class="countdown-section fade">
+            <div id="countdown"></div>
+        </section>
+
+        <!-- LETTER SECTION -->
+        <section class="letter-section fade">
+
+            <div class="letter-card">
+
+                <h2>☆ Happy Birthday Sayangg ☆</h2>
+
+                <p>
+                    Hai imupp :p <br><br>
+
+                    Honestly, aku gatau how to start this without sounding cheesy,
+                    jadi aku bakal langsung bilang aja, hehe.
+
+                    Aku seneng banget karena di hidup yang cuma terjadi sekali ini,
+                    kita bisa dipertemukan dan jadi sedekat sekarang.
+                    I'm so glad to know the fact that I'm yours. ♡
+
+                    Out of all the random things that happen in life,
+                    somehow our paths crossed, and I think that's one of my favorite things ever.
+
+                    Aku harap di ulang tahun kamu yang ke-18 ini,
+                    tahun ini bisa ngasih lebih banyak alasan buat senyum,
+                    lebih banyak kenangan indah,
+                    dan lebih banyak momen di mana hidup terasa sedikit lebih ringan.
+
+                    Semoga kamu bisa melihat betapa amazing-nya diri kamu,
+                    seperti aku melihat kamu,
+                    dan semoga kamu bisa lebih menghargai semua hal yang sudah berhasil kamu lewati sampai hari ini.
+
+                    Thank you for being you.
+
+                    Makasih banget buat setiap obrolan,
+                    setiap tawa,
+                    dan setiap momen kecil yang mungkin terlihat biasa aja,
+                    tapi ternyata jadi kenangan yang ingin aku simpan.
+
+                    Aku gatau gimana semuanya akan berjalan di masa depan,
+                    tapi aku tahu kalau ketemu kamu bikin hari-hariku jauh lebih cerah dibanding sebelumnya.
+
+                    Semoga kamu juga merasakan hal yang sama ya, sayang. ♡
+
+                    Jadi hari ini, please be happy.
+
+                    Makan makanan favorit kamu,
+                    nikmatin harimu,
+                    dan biarkan dirimu merasa dicintai,
+                    karena kamu memang pantas mendapatkannya.
+
+                    Jujur, aku agak sedih karena kamu nggak terlalu excited sama ulang tahun kamu sendiri.
+                    Padahal hari ini adalah hari lahir seseorang yang sangat berarti buat aku.
+
+                    So once again...
+
+                    Happy Birthday, Sayangg. ♡
+
+                    Aku harap surat kecil ini bisa bikin hari spesial kamu terasa sedikit lebih spesial.
+
+                    With love,<br>
+                    Maiiy ♡
+                </p>
+
+            </div>
+
+            <div class="photo-card">
+                <img
+                    src="1000357236.jpeg"
+                    alt="Our Photo"
+                    id="mainPhoto">
+            </div>
+
+        </section>
+
+        <!-- MUSIC SECTION -->
+        <section class="music-section fade">
+
+            <div class="glass-card small">
+
+                <h3>Currently Playing 🎵</h3>
+
+                <p>
+                    You and Only You :)
+                </p>
+
+                <a
+                    href="https://youtu.be/f5-iN-DaPcQ?si=KaG0mp1z0cxY27iJ"
+                    target="_blank">
+                    this song really sticks with you in my mind ♡
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- NOTES SECTION -->
+        <section class="notes-section fade">
+
+            <button class="note-btn" onclick="showNote()">
+                ayoo coba klik ✨
+            </button>
+
+            <div id="noteBox">
+                there's some reminder for you hihi ♡
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <section class="footer">
             <p>
-                Hai imupp :p <br><br>
-
-                Honestly, aku gatau how to start this without sounding cheesy,
-                jadi aku bakal langsung bilang aja, hehe.
-
-                Aku seneng banget karena di hidup yang cuma terjadi sekali ini,
-                kita bisa dipertemukan dan jadi sedekat sekarang.
-                I'm so glad to know the fact that I'm yours. ♡
-
-                Out of all the random things that happen in life,
-                somehow our paths crossed, and I think that's one of my favorite things ever.
-
-                Aku harap di ulang tahun kamu yang ke-18 ini,
-                tahun ini bisa ngasih lebih banyak alasan buat senyum,
-                lebih banyak kenangan indah,
-                dan lebih banyak momen di mana hidup terasa sedikit lebih ringan.
-
-                Semoga kamu bisa melihat betapa amazing-nya diri kamu,
-                seperti aku melihat kamu,
-                dan semoga kamu bisa lebih menghargai semua hal yang sudah berhasil kamu lewati sampai hari ini.
-
-                Thank you for being you.
-
-                Makasih banget buat setiap obrolan,
-                setiap tawa,
-                dan setiap momen kecil yang mungkin terlihat biasa aja,
-                tapi ternyata jadi kenangan yang ingin aku simpan.
-
-                Aku gatau gimana semuanya akan berjalan di masa depan,
-                tapi aku tahu kalau ketemu kamu bikin hari-hariku jauh lebih cerah dibanding sebelumnya.
-
-                Semoga kamu juga merasakan hal yang sama ya, sayang. ♡
-
-                Jadi hari ini, please be happy.
-
-                Makan makanan favorit kamu,
-                nikmatin harimu,
-                dan biarkan dirimu merasa dicintai,
-                karena kamu memang pantas mendapatkannya.
-
-                Jujur, aku agak sedih karena kamu nggak terlalu excited sama ulang tahun kamu sendiri.
-                Padahal hari ini adalah hari lahir seseorang yang sangat berarti buat aku.
-
-                So once again...
-
-                Happy Birthday, Sayangg. ♡
-
-                Aku harap surat kecil ini bisa bikin hari spesial kamu terasa sedikit lebih spesial.
-
-                With love,<br>
-                Maiiy ♡
+                yayy, end of this letter ♡ <br>
+                (but hopefully our love never ends)
             </p>
+        </section>
 
-        </div>
-
-        <div class="photo-card">
-            <img
-                src="1000357236.jpeg"
-                alt="Our Photo"
-                id="mainPhoto">
-        </div>
-
-    </section>
-
-    <!-- MUSIC -->
-
-    <section class="music-section fade">
-
-        <div class="glass-card small">
-
-            <h3>Currently Playing 🎵</h3>
-
-            <p>
-                You and Only You :)
-            </p>
-
-            <a
-                href="https://youtu.be/f5-iN-DaPcQ?si=KaG0mp1z0cxY27iJ"
-                target="_blank">
-                this song really sticks with you in my mind ♡
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- NOTES -->
-
-    <section class="notes-section fade">
-
-        <button class="note-btn" onclick="showNote()">
-            ayoo coba klik ✨
-        </button>
-
-        <div id="noteBox">
-            there's some reminder for you hihi ♡
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-
-    <section class="footer">
-        <p>
-            yayy, end of this letter ♡ <br>
-            (but hopefully our love never ends)
-        </p>
-    </section>
+    </div>
 
     <!-- PHOTO MODAL -->
-
     <div id="modal">
         <span id="closeModal">&times;</span>
         <img id="modalImg" alt="Preview Photo">
     </div>
 
+    <!-- BACKGROUND MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MUSIC BUTTON -->
+    <button id="musicBtn" onclick="toggleMusic()">▶ Play Music</button>
+
     <script src="script.js"></script>
 
 </body>
 </html>
-```
