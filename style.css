@@ -3,7 +3,7 @@
    FLOATING HEARTS
 ========================== */
 
-heart{
+.heart{
 
 position:fixed;
 
@@ -256,4 +256,3 @@ font-size:1.5rem;
 }
 
 }
-```
