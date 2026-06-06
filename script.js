@@ -1,6 +1,7 @@
-// ======================
+
+// =====================================
 // PASSWORD
-// ======================
+// =====================================
 
 function checkPassword() {
 
@@ -18,35 +19,52 @@ function checkPassword() {
         const music =
         document.getElementById("bgMusic");
 
-        music.play().catch(() => {
-            console.log("Autoplay blocked");
-        });
+        if (music) {
+            music.play().catch(() => {
+                console.log("Autoplay blocked");
+            });
+        }
 
         window.scrollTo({
-            top: 0
+            top: 0,
+            behavior: "smooth"
         });
 
-    }
+    } else {
+
+        alert("password salah sayangg :(");
 
     }
 
+}
 
-
-// ======================
+// =====================================
 // COUNTDOWN
-// ======================
+// =====================================
 
-// ======================
-// COUNTDOWN
-// ======================
-
-// GANTI TANGGAL JADIAN DI SINI
 const startDate =
 new Date("2026-04-19T00:00:00");
 
 function updateCountdown() {
 
+    const countdown =
+    document.getElementById("countdown");
+
+    if (!countdown) return;
+
     const now = new Date();
+
+    if (now < startDate) {
+
+        countdown.innerHTML = `
+            <div class="time-card">
+                <h2>♡</h2>
+                <p>our story hasn't started yet</p>
+            </div>
+        `;
+
+        return;
+    }
 
     let years =
     now.getFullYear() -
@@ -97,8 +115,7 @@ function updateCountdown() {
         % 60
     );
 
-    document.getElementById("countdown")
-    .innerHTML = `
+    countdown.innerHTML = `
 
     <div class="time-card">
         <h2>${years}</h2>
@@ -129,39 +146,50 @@ function updateCountdown() {
 }
 
 updateCountdown();
+setInterval(updateCountdown, 1000);
 
-setInterval(
-updateCountdown,
-1000
-);
-
-// ======================
+// =====================================
 // RANDOM NOTES
-// ======================
+// =====================================
 
 const notes = [
 
-"thank u for being part of my story.",
+    "i'll always be proud of u ♡",
 
-"u make ordinary days feel special.",
+    "you deserve every good thing coming your way.",
 
-"some people become memories. and u become home.",
+    "thank u for existing.",
 
-"i hope life is kind to u today.",
+    "u're my favorite notification.",
 
-"u're one of my favorite thoughts.",
+    "i still smile when i think about u.",
 
-"the little moments are still my favorite.",
+    "the world feels softer with u in it.",
 
-"im glad our paths crossed.",
+    "i hope u know how loved u are.",
 
-"u matter more than u know.",
+    "you're my comfort person.",
 
-"Thank you for existing."
+    "meeting u was one of my favorite accidents.",
+
+    "my days became brighter because of u.",
+
+    "i choose u, again and again.",
+
+    "you're worth more than every doubt in your head.",
+
+    "thank u for being part of my story.",
+
+    "u matter more than u know. ♡"
 
 ];
 
 function showNote() {
+
+    const noteBox =
+    document.getElementById("noteBox");
+
+    if (!noteBox) return;
 
     const randomNote =
     notes[
@@ -170,44 +198,47 @@ function showNote() {
         )
     ];
 
-    document.getElementById("noteBox")
-    .innerHTML = randomNote;
+    noteBox.innerHTML = randomNote;
 
 }
 
-// ======================
+// =====================================
 // FLOATING STARS
-// ======================
+// =====================================
 
 const starsContainer =
 document.getElementById("stars");
 
-for (let i = 0; i < 70; i++) {
+if (starsContainer) {
 
-    const star =
-    document.createElement("div");
+    for (let i = 0; i < 70; i++) {
 
-    star.classList.add("star");
+        const star =
+        document.createElement("div");
 
-    star.style.left =
-    Math.random() * 100 + "vw";
+        star.classList.add("star");
 
-    star.style.top =
-    Math.random() * 100 + "vh";
+        star.style.left =
+        Math.random() * 100 + "vw";
 
-    star.style.animationDuration =
-    (12 + Math.random() * 25) + "s";
+        star.style.top =
+        Math.random() * 100 + "vh";
 
-    star.style.animationDelay =
-    Math.random() * 10 + "s";
+        star.style.animationDuration =
+        (12 + Math.random() * 25) + "s";
 
-    starsContainer.appendChild(star);
+        star.style.animationDelay =
+        Math.random() * 10 + "s";
+
+        starsContainer.appendChild(star);
+
+    }
 
 }
 
-// ======================
+// =====================================
 // SCROLL FADE
-// ======================
+// =====================================
 
 const observer =
 new IntersectionObserver(
@@ -240,9 +271,9 @@ observer.observe(section);
 
 });
 
-// ======================
+// =====================================
 // PHOTO MODAL
-// ======================
+// =====================================
 
 const photo =
 document.getElementById("mainPhoto");
@@ -253,51 +284,106 @@ document.getElementById("modal");
 const modalImg =
 document.getElementById("modalImg");
 
-photo.addEventListener(
+if (photo && modal && modalImg) {
 
-"click",
+    photo.addEventListener(
 
-() => {
+    "click",
 
-    modal.style.display = "flex";
+    () => {
 
-    modalImg.src = photo.src;
+        modal.style.display = "flex";
+
+        modalImg.src = photo.src;
+
+    }
+
+    );
+
+    modal.addEventListener(
+
+    "click",
+
+    () => {
+
+        modal.style.display = "none";
+
+    }
+
+    );
 
 }
 
-);
+// =====================================
+// MUSIC BUTTON
+// =====================================
 
-modal.addEventListener(
-
-"click",
-
-() => {
-
-    modal.style.display = "none";
-
-}
-
-);
-
-function toggleMusic(){
+function toggleMusic() {
 
     const music =
     document.getElementById("bgMusic");
 
-    if(music.paused){
+    const btn =
+    document.getElementById("musicBtn");
+
+    if (!music) return;
+
+    if (music.paused) {
 
         music.play();
 
-    }else{
+        if (btn) {
+            btn.innerText =
+            "⏸ Pause Music";
+        }
+
+    } else {
 
         music.pause();
+
+        if (btn) {
+            btn.innerText =
+            "▶ Play Music";
+        }
 
     }
 
 }
-// ======================
-// PRELOAD
-// ======================
+
+// =====================================
+// FLOATING HEARTS
+// =====================================
+
+function createHeart() {
+
+    const heart =
+    document.createElement("div");
+
+    heart.innerHTML = "❤";
+
+    heart.classList.add("heart");
+
+    heart.style.left =
+    Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+    (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 8000);
+
+}
+
+setInterval(createHeart, 1000);
+
+// =====================================
+// PAGE LOAD
+// =====================================
 
 window.addEventListener(
 
@@ -305,8 +391,9 @@ window.addEventListener(
 
 () => {
 
-updateCountdown();
+    updateCountdown();
 
 }
 
 );
+```
