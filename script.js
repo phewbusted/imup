@@ -43,6 +43,14 @@ function checkPassword() {
 }
 
 // =====================================
+// BIRTHDAY POPUP
+// =====================================
+
+function closeBirthdayPopup() {
+    document.getElementById("birthdayPopup").style.display = "none";
+}
+
+// =====================================
 // COUNTDOWN
 // =====================================
 
