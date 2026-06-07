@@ -962,3 +962,13 @@ transform: translateY(0);
   position: static;
   padding: 12px 20px;
 }
+/* letter full width setelah foto dihapus */
+
+.letter-section {
+  grid-template-columns: 1fr;
+}
+
+.letter-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
