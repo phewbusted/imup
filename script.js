@@ -65,10 +65,6 @@ function updateCountdown() {
         return;
     }
 
-    let years =
-    now.getFullYear() -
-    startDate.getFullYear();
-
     let months =
     now.getMonth() -
     startDate.getMonth();
@@ -115,11 +111,6 @@ function updateCountdown() {
     );
 
     countdown.innerHTML = `
-
-    <div class="time-card">
-        <h2>${years}</h2>
-        <p>Years</p>
-    </div>
 
     <div class="time-card">
         <h2>${months}</h2>
