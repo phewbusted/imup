@@ -425,13 +425,32 @@ we could met dan jadi sedekat sekarang.
 i'm so glad to know the fact that i'm yours🤍.<br><br>
 
 out of all the random things that happen in life,
-somehow our paths crossed,
-and i think thats one of my favorite things ever.<br><br>
+somehow our paths crossed, and i think thats one of my favorite things ever.<br><br>
 
 i wish on ur 18th bday🎂,
-this year could give u thousand reasons to smile and keep going.<br><br>
+this year could give u thousand reasons to smile and keep going,
+lebih banyak kenangan indah,
+dan lebih banyak momen where u realize that life actually so beautiful😄.<br><br>
 
-thank u for being u.<br><br>
+hopefully u could simply see urself kaya aku ngeliat kamu mup, ure amazing!!
+dan semoga kamu bisa lebih menghargai semua hal yang sudah berhasil kamu lewati sampai hari ini.<br><br>
+
+thank u for being u.
+tysm yaa sayangg for every laughter
+dan setiap momen kecil yang mungkin terlihat biasa aja,
+but somehow jadi kenangan yang.... semoga could stay longer and forever.<br><br>
+
+aku gatau gimana semuanya akan berjalan di masa depan,
+but i clearly know that with u my days are brighter.<br>
+semoga kamu juga merasakan hal yang sama ya sayangg💞<br><br>
+
+jujur, aku agak sedih karena kamu nggak terlalu excited sama ulang tahun kamu sendiri😔😔
+padahal hari ini adalah hari lahir seseorang yang sangat berarti buat aku:(<br><br>
+
+so once again...
+cheers on ur 18th birthday, sayangg♡<br><br>
+
+hopefully this digital letter could make hari spesial kamu terasa sedikit lebih spesial😸<br><br>
 
 With love,<br>
 maiiy♡
@@ -448,11 +467,20 @@ function typeLetter() {
 
   if (index < letterText.length) {
 
-    letter.innerHTML +=
-      letterText.charAt(index);
+    // kalau ketemu tag HTML
+    if (letterText.substring(index, index + 4) === "<br>") {
 
-    index++;
+      letter.innerHTML += "<br>";
+      index += 4;
 
-    setTimeout(typeLetter, 25);
+    } else {
+
+      letter.innerHTML +=
+        letterText.charAt(index);
+
+      index++;
+    }
+
+    setTimeout(typeLetter, 20);
   }
 }
