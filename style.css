@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1e3a8a 0%, #0c4a6e 50%, #164e63 100%);
-  color: #f1f5f9;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2e5c8a 50%, #3d7fa8 100%);
+  color: #f5f1ed;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ body {
 }
 .star {
   position: absolute;
-  background: white;
+  background: #fffbf5;
   border-radius: 50%;
   animation: twinkle 3s infinite;
   width: 2px;
@@ -91,7 +91,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1e3a8a 0%, #0c4a6e 50%, #164e63 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2e5c8a 50%, #3d7fa8 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,9 +100,9 @@ body {
 }
 
 .lock-card {
-  background: rgba(30, 58, 138, 0.8);
+  background: rgba(30, 58, 138, 0.85);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 255, 0.3);
+  border: 1px solid rgba(200, 220, 240, 0.3);
   padding: 50px;
   border-radius: 20px;
   text-align: center;
@@ -126,17 +126,17 @@ body {
 .lock-card h1 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #bfdbfe;
+  color: #e8dcc8;
 }
 
 .lock-card input {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
-  border: 2px solid rgba(71, 85, 255, 0.3);
+  border: 2px solid rgba(200, 220, 240, 0.3);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fffbf5;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   transition: 0.3s ease;
@@ -144,9 +144,9 @@ body {
 
 .lock-card input:focus {
   outline: none;
-  border-color: #3b82f6;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+  border-color: #a8d8ea;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 15px rgba(168, 216, 234, 0.3);
 }
 
 .lock-card input::placeholder {
@@ -156,8 +156,8 @@ body {
 .lock-card button {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #3b82f6, #1e40af);
-  color: white;
+  background: linear-gradient(135deg, #5b8fc7, #2e5c8a);
+  color: #fffbf5;
   border: none;
   border-radius: 10px;
   font-size: 1.1rem;
@@ -169,7 +169,7 @@ body {
 
 .lock-card button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 25px rgba(168, 216, 234, 0.4);
 }
 
 .lock-card button:active {
@@ -225,9 +225,9 @@ body {
 }
 
 .time-card {
-  background: rgba(30, 58, 138, 0.6);
+  background: rgba(62, 100, 150, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 255, 0.3);
+  border: 1px solid rgba(200, 220, 240, 0.3);
   padding: 20px;
   min-width: 90px;
   flex: 1;
@@ -238,19 +238,19 @@ body {
 
 .time-card h2 {
   font-size: 2rem;
-  color: #60a5fa;
+  color: #a8d8ea;
   margin-bottom: 5px;
 }
 
 .time-card p {
   font-size: 0.9rem;
-  color: #bfdbfe;
+  color: #e8dcc8;
 }
 
 .time-card:hover {
   transform: translateY(-5px);
-  background: rgba(30, 58, 138, 0.8);
-  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
+  background: rgba(62, 100, 150, 0.8);
+  box-shadow: 0 15px 40px rgba(168, 216, 234, 0.2);
 }
 
 /* ==========================
@@ -265,9 +265,9 @@ body {
 }
 
 .letter-card {
-  background: rgba(30, 58, 138, 0.5);
+  background: rgba(62, 100, 150, 0.55);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 255, 0.3);
+  border: 1px solid rgba(200, 220, 240, 0.3);
   padding: 40px;
   border-radius: 20px;
   transition: 0.4s ease;
@@ -278,38 +278,38 @@ body {
 .letter-card h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #60a5fa;
+  color: #a8d8ea;
 }
 
 .letter-card p {
   line-height: 1.8;
-  color: #dbeafe;
+  color: #f0e8d8;
   font-size: 0.95rem;
   word-break: break-word;
 }
 
 .letter-card p a {
-  color: #60a5fa;
+  color: #a8d8ea;
   text-decoration: none;
-  border-bottom: 2px solid #60a5fa;
+  border-bottom: 2px solid #a8d8ea;
   transition: 0.3s ease;
 }
 
 .letter-card p a:hover {
-  color: #93c5fd;
-  border-bottom-color: #93c5fd;
+  color: #d5ebf7;
+  border-bottom-color: #d5ebf7;
 }
 
 .letter-card:hover {
   transform: translateY(-5px);
-  background: rgba(30, 58, 138, 0.7);
-  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+  background: rgba(62, 100, 150, 0.75);
+  box-shadow: 0 20px 40px rgba(168, 216, 234, 0.2);
 }
 
 .photo-card {
-  background: rgba(30, 58, 138, 0.5);
+  background: rgba(62, 100, 150, 0.55);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 255, 0.3);
+  border: 1px solid rgba(200, 220, 240, 0.3);
   padding: 20px;
   border-radius: 20px;
   transition: 0.4s ease;
@@ -331,13 +331,13 @@ body {
 
 .photo-card img:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 30px rgba(168, 216, 234, 0.3);
 }
 
 .photo-card:hover {
   transform: translateY(-5px);
-  background: rgba(30, 58, 138, 0.7);
-  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+  background: rgba(62, 100, 150, 0.75);
+  box-shadow: 0 20px 40px rgba(168, 216, 234, 0.2);
 }
 
 /* ==========================
@@ -350,9 +350,9 @@ body {
 }
 
 .glass-card {
-  background: rgba(30, 58, 138, 0.6);
+  background: rgba(62, 100, 150, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 255, 0.3);
+  border: 1px solid rgba(200, 220, 240, 0.3);
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -367,27 +367,27 @@ body {
 .glass-card h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #60a5fa;
+  color: #a8d8ea;
 }
 
 .glass-card p {
-  color: #dbeafe;
+  color: #f0e8d8;
   margin-bottom: 15px;
   word-break: break-word;
 }
 
 .glass-card a {
-  color: #60a5fa;
+  color: #a8d8ea;
   text-decoration: none;
-  border-bottom: 2px solid #60a5fa;
+  border-bottom: 2px solid #a8d8ea;
   transition: 0.3s ease;
   display: inline-block;
   word-break: break-word;
 }
 
 .glass-card a:hover {
-  color: #93c5fd;
-  border-bottom-color: #93c5fd;
+  color: #d5ebf7;
+  border-bottom-color: #d5ebf7;
 }
 
 /* ==========================
@@ -400,8 +400,8 @@ body {
 }
 
 .note-btn {
-  background: linear-gradient(135deg, #3b82f6, #1e40af);
-  color: white;
+  background: linear-gradient(135deg, #5b8fc7, #2e5c8a);
+  color: #fffbf5;
   border: none;
   padding: 15px 40px;
   border-radius: 10px;
@@ -415,16 +415,16 @@ body {
 
 .note-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 25px rgba(168, 216, 234, 0.4);
 }
 
 #noteBox {
-  background: rgba(30, 58, 138, 0.6);
+  background: rgba(62, 100, 150, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(71, 85, 255, 0.3);
+  border: 1px solid rgba(200, 220, 240, 0.3);
   border-radius: 15px;
   padding: 30px;
-  color: #dbeafe;
+  color: #f0e8d8;
   transition: 0.4s ease;
   max-width: 600px;
   margin: 0 auto;
@@ -443,7 +443,7 @@ body {
 .footer {
   text-align: center;
   padding: 40px 20px;
-  color: #93c5fd;
+  color: #d5ebf7;
   font-size: 1rem;
 }
 
@@ -455,7 +455,7 @@ body {
   position: fixed;
   top: -20px;
   font-size: 18px;
-  color: #60a5fa;
+  color: #a8d8ea;
   pointer-events: none;
   z-index: 999;
   opacity: 0.8;
@@ -484,21 +484,21 @@ body {
   width: auto;
   padding: 12px 18px;
   border-radius: 999px;
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(91, 143, 199, 0.25);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(59, 130, 246, 0.4);
-  color: #60a5fa;
+  border: 1px solid rgba(168, 216, 234, 0.4);
+  color: #a8d8ea;
   font-size: 0.95rem;
   z-index: 999;
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 8px 25px rgba(168, 216, 234, 0.2);
   cursor: pointer;
   transition: 0.3s ease;
   font-family: 'Poppins', sans-serif;
 }
 
 #musicBtn:hover {
-  background: rgba(59, 130, 246, 0.3);
-  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+  background: rgba(91, 143, 199, 0.35);
+  box-shadow: 0 10px 30px rgba(168, 216, 234, 0.3);
 }
 
 /* ==========================
@@ -518,8 +518,8 @@ body {
 ========================== */
 
 ::selection {
-  background: #3b82f6;
-  color: #f1f5f9;
+  background: #5b8fc7;
+  color: #fffbf5;
 }
 
 /* ==========================
@@ -551,14 +551,14 @@ body {
   top: 20px;
   right: 30px;
   font-size: 40px;
-  color: white;
+  color: #fffbf5;
   cursor: pointer;
   transition: 0.3s ease;
   z-index: 100000;
 }
 
 #closeModal:hover {
-  color: #60a5fa;
+  color: #a8d8ea;
 }
 
 /* ==========================
@@ -879,7 +879,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 30px rgba(168, 216, 234, 0.3);
 }
 
 .album-cover.playing {
@@ -915,8 +915,8 @@ body {
 }
 
 .popup-card {
-  background: rgba(30, 58, 138, 0.9);
-  border: 1px solid rgba(71, 85, 255, 0.3);
+  background: rgba(62, 100, 150, 0.9);
+  border: 1px solid rgba(200, 220, 240, 0.3);
   border-radius: 25px;
   padding: 40px;
   max-width: 400px;
