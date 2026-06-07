@@ -481,6 +481,6 @@ function typeLetter() {
       index++;
     }
 
-    setTimeout(typeLetter, 20);
+    setTimeout(typeLetter, 18);
   }
 }
