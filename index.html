@@ -101,26 +101,32 @@
 
         </section>
 
-        <!-- MUSIC SECTION -->
-        <section class="music-section fade">
+       <section class="music-section fade">
 
-            <div class="glass-card small">
+    <div class="glass-card music-player">
 
-                <h3>Currently Playing 🎵</h3>
+        <img 
+            src="1000357236.jpeg" 
+            alt="album cover" 
+            class="album-cover"
+            id="albumCover">
 
-                <p>
-                    You and Only You🍃
-                </p>
+        <div class="music-info">
+            <h3>Now Playing 🎵</h3>
+            <p>You and Only You 🍃</p>
+        </div>
 
-                <a
-                    href="https://youtu.be/f5-iN-DaPcQ?si=KaG0mp1z0cxY27iJ"
-                    target="_blank">
-                    kalo denger lagu ini ure the one who comes to my mind♡
-                </a>
+        <audio id="bgMusic" loop>
+            <source src="You and Only You.mp3" type="audio/mpeg">
+        </audio>
 
-            </div>
+        <button id="musicBtn" onclick="toggleMusic()">
+            ▶ Play Music
+        </button>
 
-        </section>
+    </div>
+
+</section>
 
         <!-- NOTES SECTION -->
         <section class="notes-section fade">
