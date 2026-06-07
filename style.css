@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1e3a8a 0%, #2e5c8a 50%, #3d7fa8 100%);
+  background: linear-gradient(135deg, #0a1e3f 0%, #1a3a6f 25%, #2d5a9f 50%, #1f4a8f 75%, #0d2e5c 100%);
   color: #f5f1ed;
   min-height: 100vh;
   overflow-x: hidden;
@@ -30,7 +30,7 @@ body {
 }
 .star {
   position: absolute;
-  background: #fffbf5;
+  background: #ffffff;
   border-radius: 50%;
   animation: twinkle 3s infinite;
   width: 2px;
@@ -91,7 +91,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1e3a8a 0%, #2e5c8a 50%, #3d7fa8 100%);
+  background: linear-gradient(135deg, #0a1e3f 0%, #1a3a6f 25%, #2d5a9f 50%, #1f4a8f 75%, #0d2e5c 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,13 +100,13 @@ body {
 }
 
 .lock-card {
-  background: rgba(30, 58, 138, 0.85);
+  background: rgba(26, 58, 111, 0.9);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 220, 240, 0.3);
+  border: 1px solid rgba(168, 210, 255, 0.4);
   padding: 50px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   animation: slideIn 0.6s ease;
   width: 100%;
   max-width: 400px;
@@ -126,17 +126,17 @@ body {
 .lock-card h1 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #e8dcc8;
+  color: #e8f4ff;
 }
 
 .lock-card input {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
-  border: 2px solid rgba(200, 220, 240, 0.3);
+  border: 2px solid rgba(168, 210, 255, 0.3);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  color: #fffbf5;
+  background: rgba(45, 90, 159, 0.4);
+  color: #e8f4ff;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   transition: 0.3s ease;
@@ -144,20 +144,20 @@ body {
 
 .lock-card input:focus {
   outline: none;
-  border-color: #a8d8ea;
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 15px rgba(168, 216, 234, 0.3);
+  border-color: #7ec8ff;
+  background: rgba(45, 90, 159, 0.6);
+  box-shadow: 0 0 15px rgba(126, 200, 255, 0.4);
 }
 
 .lock-card input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(232, 244, 255, 0.4);
 }
 
 .lock-card button {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #5b8fc7, #2e5c8a);
-  color: #fffbf5;
+  background: linear-gradient(135deg, #2d5a9f, #1a3a6f);
+  color: #e8f4ff;
   border: none;
   border-radius: 10px;
   font-size: 1.1rem;
@@ -169,7 +169,7 @@ body {
 
 .lock-card button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(168, 216, 234, 0.4);
+  box-shadow: 0 10px 25px rgba(126, 200, 255, 0.5);
 }
 
 .lock-card button:active {
@@ -225,9 +225,9 @@ body {
 }
 
 .time-card {
-  background: rgba(62, 100, 150, 0.6);
+  background: rgba(45, 90, 159, 0.5);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 220, 240, 0.3);
+  border: 1px solid rgba(168, 210, 255, 0.3);
   padding: 20px;
   min-width: 90px;
   flex: 1;
@@ -238,19 +238,19 @@ body {
 
 .time-card h2 {
   font-size: 2rem;
-  color: #a8d8ea;
+  color: #7ec8ff;
   margin-bottom: 5px;
 }
 
 .time-card p {
   font-size: 0.9rem;
-  color: #e8dcc8;
+  color: #c5e3ff;
 }
 
 .time-card:hover {
   transform: translateY(-5px);
-  background: rgba(62, 100, 150, 0.8);
-  box-shadow: 0 15px 40px rgba(168, 216, 234, 0.2);
+  background: rgba(45, 90, 159, 0.7);
+  box-shadow: 0 15px 40px rgba(126, 200, 255, 0.3);
 }
 
 /* ==========================
@@ -265,55 +265,55 @@ body {
 }
 
 .letter-card {
-  background: rgba(62, 100, 150, 0.55);
+  background: rgba(31, 74, 143, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 220, 240, 0.3);
+  border: 1px solid rgba(168, 210, 255, 0.3);
   padding: 40px;
   border-radius: 20px;
   transition: 0.4s ease;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 
 .letter-card h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #a8d8ea;
+  color: #7ec8ff;
 }
 
 .letter-card p {
   line-height: 1.8;
-  color: #f0e8d8;
+  color: #d9eeff;
   font-size: 0.95rem;
   word-break: break-word;
 }
 
 .letter-card p a {
-  color: #a8d8ea;
+  color: #7ec8ff;
   text-decoration: none;
-  border-bottom: 2px solid #a8d8ea;
+  border-bottom: 2px solid #7ec8ff;
   transition: 0.3s ease;
 }
 
 .letter-card p a:hover {
-  color: #d5ebf7;
-  border-bottom-color: #d5ebf7;
+  color: #a8d2ff;
+  border-bottom-color: #a8d2ff;
 }
 
 .letter-card:hover {
   transform: translateY(-5px);
-  background: rgba(62, 100, 150, 0.75);
-  box-shadow: 0 20px 40px rgba(168, 216, 234, 0.2);
+  background: rgba(31, 74, 143, 0.8);
+  box-shadow: 0 20px 40px rgba(126, 200, 255, 0.3);
 }
 
 .photo-card {
-  background: rgba(62, 100, 150, 0.55);
+  background: rgba(31, 74, 143, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 220, 240, 0.3);
+  border: 1px solid rgba(168, 210, 255, 0.3);
   padding: 20px;
   border-radius: 20px;
   transition: 0.4s ease;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,13 +331,13 @@ body {
 
 .photo-card img:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(168, 216, 234, 0.3);
+  box-shadow: 0 10px 30px rgba(126, 200, 255, 0.4);
 }
 
 .photo-card:hover {
   transform: translateY(-5px);
-  background: rgba(62, 100, 150, 0.75);
-  box-shadow: 0 20px 40px rgba(168, 216, 234, 0.2);
+  background: rgba(31, 74, 143, 0.8);
+  box-shadow: 0 20px 40px rgba(126, 200, 255, 0.3);
 }
 
 /* ==========================
@@ -350,12 +350,12 @@ body {
 }
 
 .glass-card {
-  background: rgba(62, 100, 150, 0.6);
+  background: rgba(45, 90, 159, 0.5);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 220, 240, 0.3);
+  border: 1px solid rgba(168, 210, 255, 0.3);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   max-width: 500px;
   margin: 0 auto;
 }
@@ -367,27 +367,27 @@ body {
 .glass-card h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #a8d8ea;
+  color: #7ec8ff;
 }
 
 .glass-card p {
-  color: #f0e8d8;
+  color: #d9eeff;
   margin-bottom: 15px;
   word-break: break-word;
 }
 
 .glass-card a {
-  color: #a8d8ea;
+  color: #7ec8ff;
   text-decoration: none;
-  border-bottom: 2px solid #a8d8ea;
+  border-bottom: 2px solid #7ec8ff;
   transition: 0.3s ease;
   display: inline-block;
   word-break: break-word;
 }
 
 .glass-card a:hover {
-  color: #d5ebf7;
-  border-bottom-color: #d5ebf7;
+  color: #a8d2ff;
+  border-bottom-color: #a8d2ff;
 }
 
 /* ==========================
@@ -400,8 +400,8 @@ body {
 }
 
 .note-btn {
-  background: linear-gradient(135deg, #5b8fc7, #2e5c8a);
-  color: #fffbf5;
+  background: linear-gradient(135deg, #2d5a9f, #1a3a6f);
+  color: #e8f4ff;
   border: none;
   padding: 15px 40px;
   border-radius: 10px;
@@ -415,16 +415,16 @@ body {
 
 .note-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(168, 216, 234, 0.4);
+  box-shadow: 0 10px 25px rgba(126, 200, 255, 0.5);
 }
 
 #noteBox {
-  background: rgba(62, 100, 150, 0.6);
+  background: rgba(45, 90, 159, 0.5);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 220, 240, 0.3);
+  border: 1px solid rgba(168, 210, 255, 0.3);
   border-radius: 15px;
   padding: 30px;
-  color: #f0e8d8;
+  color: #d9eeff;
   transition: 0.4s ease;
   max-width: 600px;
   margin: 0 auto;
@@ -443,7 +443,7 @@ body {
 .footer {
   text-align: center;
   padding: 40px 20px;
-  color: #d5ebf7;
+  color: #a8d2ff;
   font-size: 1rem;
 }
 
@@ -455,7 +455,7 @@ body {
   position: fixed;
   top: -20px;
   font-size: 18px;
-  color: #a8d8ea;
+  color: #7ec8ff;
   pointer-events: none;
   z-index: 999;
   opacity: 0.8;
@@ -484,21 +484,21 @@ body {
   width: auto;
   padding: 12px 18px;
   border-radius: 999px;
-  background: rgba(91, 143, 199, 0.25);
+  background: rgba(45, 90, 159, 0.4);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(168, 216, 234, 0.4);
-  color: #a8d8ea;
+  border: 1px solid rgba(126, 200, 255, 0.4);
+  color: #7ec8ff;
   font-size: 0.95rem;
   z-index: 999;
-  box-shadow: 0 8px 25px rgba(168, 216, 234, 0.2);
+  box-shadow: 0 8px 25px rgba(126, 200, 255, 0.2);
   cursor: pointer;
   transition: 0.3s ease;
   font-family: 'Poppins', sans-serif;
 }
 
 #musicBtn:hover {
-  background: rgba(91, 143, 199, 0.35);
-  box-shadow: 0 10px 30px rgba(168, 216, 234, 0.3);
+  background: rgba(45, 90, 159, 0.6);
+  box-shadow: 0 10px 30px rgba(126, 200, 255, 0.4);
 }
 
 /* ==========================
@@ -509,8 +509,8 @@ body {
 .letter-card,
 .photo-card,
 .time-card {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(168, 210, 255, 0.1);
 }
 
 /* ==========================
@@ -518,8 +518,8 @@ body {
 ========================== */
 
 ::selection {
-  background: #5b8fc7;
-  color: #fffbf5;
+  background: #2d5a9f;
+  color: #e8f4ff;
 }
 
 /* ==========================
@@ -533,7 +533,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 99999;
   align-items: center;
   justify-content: center;
@@ -551,14 +551,14 @@ body {
   top: 20px;
   right: 30px;
   font-size: 40px;
-  color: #fffbf5;
+  color: #e8f4ff;
   cursor: pointer;
   transition: 0.3s ease;
   z-index: 100000;
 }
 
 #closeModal:hover {
-  color: #a8d8ea;
+  color: #7ec8ff;
 }
 
 /* ==========================
@@ -879,7 +879,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  box-shadow: 0 10px 30px rgba(168, 216, 234, 0.3);
+  box-shadow: 0 10px 30px rgba(126, 200, 255, 0.3);
 }
 
 .album-cover.playing {
@@ -906,7 +906,7 @@ body {
 #birthdayPopup {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(10px);
   display: none;
   justify-content: center;
@@ -915,8 +915,8 @@ body {
 }
 
 .popup-card {
-  background: rgba(62, 100, 150, 0.9);
-  border: 1px solid rgba(200, 220, 240, 0.3);
+  background: rgba(31, 74, 143, 0.95);
+  border: 1px solid rgba(168, 210, 255, 0.3);
   border-radius: 25px;
   padding: 40px;
   max-width: 400px;
