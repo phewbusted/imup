@@ -14,7 +14,7 @@ function checkPassword() {
 
         document.getElementById("content")
         .style.display = "block";
-
+typeLetter();
         document.getElementById(
   "birthdayPopup"
 ).style.display = "flex";
@@ -414,3 +414,45 @@ document.addEventListener(
     stars.style.transform =
       `translate(${x}px, ${y}px)`;
 });
+const letterText = `
+To my dearest imup,<br><br>
+
+honestly, idk how to start this without sounding cheesy🧀,
+so aku bakal langsung bilang aja, hehe.<br><br>
+
+so happy to know that di hidup yang cuma terjadi sekali ini,
+we could met dan jadi sedekat sekarang.
+i'm so glad to know the fact that i'm yours🤍.<br><br>
+
+out of all the random things that happen in life,
+somehow our paths crossed,
+and i think thats one of my favorite things ever.<br><br>
+
+i wish on ur 18th bday🎂,
+this year could give u thousand reasons to smile and keep going.<br><br>
+
+thank u for being u.<br><br>
+
+With love,<br>
+maiiy♡
+`;
+
+let index = 0;
+
+function typeLetter() {
+
+  const letter =
+    document.getElementById(
+      "birthdayLetter"
+    );
+
+  if (index < letterText.length) {
+
+    letter.innerHTML +=
+      letterText.charAt(index);
+
+    index++;
+
+    setTimeout(typeLetter, 25);
+  }
+}
