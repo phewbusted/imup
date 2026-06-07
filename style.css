@@ -979,10 +979,7 @@ transform: translateY(0);
 
 #birthdayPopup {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.75);
   backdrop-filter: blur(10px);
 
@@ -990,8 +987,7 @@ transform: translateY(0);
   justify-content: center;
   align-items: center;
 
-  z-index: 999999;
-  padding: 20px;
+  z-index: 9999999;
 }
 
 .popup-card {
@@ -1003,6 +999,11 @@ transform: translateY(0);
   text-align: center;
 
   animation: popupFade .5s ease;
+}
+
+.popup-card {
+  position: relative;
+  z-index: 10000000;
 }
 
 .popup-card h1 {
@@ -1024,6 +1025,11 @@ transform: translateY(0);
   border-radius: 12px;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  .popup-card button {
+  position: relative;
+  z-index: 10000001;
+  pointer-events: auto;
+}
 }
 
 @keyframes popupFade {
