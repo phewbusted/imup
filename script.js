@@ -15,6 +15,11 @@ function checkPassword() {
         document.getElementById("content")
         .style.display = "block";
 
+        document.getElementById(
+  "birthdayPopup"
+).style.display = "flex";
+        
+
         const music =
         document.getElementById("bgMusic");
 
@@ -380,3 +385,7 @@ window.addEventListener(
 }
 
 );
+
+window.onbeforeunload = function () {
+  return "ehh udah selesai? 😿";
+};
