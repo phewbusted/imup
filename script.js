@@ -313,36 +313,25 @@ if (photo && modal && modalImg) {
 // MUSIC BUTTON
 // =====================================
 
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+const album = document.getElementById("albumCover");
+
 function toggleMusic() {
 
-    const music =
-    document.getElementById("bgMusic");
+  if (music.paused) {
+    music.play();
 
-    const btn =
-    document.getElementById("musicBtn");
+    musicBtn.innerHTML = "⏸ Pause Music";
+    album.classList.add("playing");
 
-    if (!music) return;
+  } else {
 
-    if (music.paused) {
+    music.pause();
 
-        music.play();
-
-        if (btn) {
-            btn.innerText =
-            "⏸ Pause Music";
-        }
-
-    } else {
-
-        music.pause();
-
-        if (btn) {
-            btn.innerText =
-            "▶ Play Music";
-        }
-
-    }
-
+    musicBtn.innerHTML = "▶ Play Music";
+    album.classList.remove("playing");
+  }
 }
 
 // =====================================
