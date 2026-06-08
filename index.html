@@ -62,13 +62,15 @@
             alt="album cover" 
             class="album-cover"
             id="albumCover">
-
+        
+<div class="vinyl-arm"></div>
+        
         <div class="music-info">
             <h3>Now Playing 🎵</h3>
             <p>You and Only You 🍃</p>
         </div>
 
-        <audio id="bgMusic" loop>
+        <audio id="bgMusic" autoplay loop>
             <source src="You and Only You.mp3" type="audio/mpeg">
         </audio>
 
@@ -173,8 +175,6 @@
         <source src="You and Only You.mp3" type="audio/mpeg">
     </audio>
 
-    <!-- MUSIC BUTTON -->
-    <button id="musicBtn" onclick="toggleMusic()">▶ Play Music</button>
 
     <script src="script.js"></script>
 
