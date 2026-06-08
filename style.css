@@ -1054,3 +1054,31 @@ body {
   background: #7ec8ff;
   border-radius: 50%;
 }
+
+.countdown-top {
+  font-size: 2rem;
+  color: #e8f4ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.countdown-bottom {
+  margin-top: 20px;
+  color: #c5e3ff;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .countdown-top {
+    font-size: 1.5rem;
+  }
+
+  .countdown-bottom {
+    font-size: 0.95rem;
+  }
+}
