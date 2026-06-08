@@ -297,10 +297,6 @@ body {
   color: #d9eeff;
   font-size: 0.95rem;
   word-break: break-word;
-
-  
-  margin: 0 auto;
-  max-width: 90%;
 }
 
 .letter-card p a {
@@ -1113,16 +1109,10 @@ body {
   color: #dbeafe;
 }
 #envelope {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-
   cursor: pointer;
   transition: 0.4s ease;
   padding: 50px 20px;
-  min-height: 250px;
 }
 
 #envelope:hover {
@@ -1133,15 +1123,6 @@ body {
   font-size: 5rem;
   animation: envelopeFloat 2.5s ease-in-out infinite;
 }
-
-#envelope p {
-  margin-top: 15px;
-  color: #dbeafe;
-  font-size: 1rem;
-  text-align: center;
-}
-
-
 
 @keyframes envelopeFloat {
   0%,100% {
