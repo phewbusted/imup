@@ -6,12 +6,23 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0a1e3f 0%, #1a3a6f 25%, #2d5a9f 50%, #1f4a8f 75%, #0d2e5c 100%);
   color: #f5f1ed;
   min-height: 100vh;
   overflow-x: hidden;
-}
 
+  background:
+    linear-gradient(
+      to bottom,
+      #08172f 0%,
+      #10264d 20%,
+      #18386c 45%,
+      #233f68 70%,
+      #354d73 85%,
+      #4b617f 100%
+    );
+
+  transition: background 0.8s ease;
+}
 /* ==========================
    STARS BACKGROUND
 ========================== */
