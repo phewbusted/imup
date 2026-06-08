@@ -528,3 +528,7 @@ window.addEventListener("load", () => {
   const btn = document.getElementById("musicBtn");
   btn.innerHTML = "⏸ Pause Music";
 });
+function openLetter() {
+  document.getElementById("envelope").style.display = "none";
+  document.getElementById("letterContent").style.display = "block";
+}
