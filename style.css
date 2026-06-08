@@ -942,21 +942,25 @@ body {
   text-align: center;
 }
 .popup-card button {
-  background: linear-gradient(135deg, #7ec8ff, #4a90e2);
+  background: linear-gradient(
+    135deg,
+    #dbeafe,
+    #a8d8ff
+  );
   color: #0a1e3f;
-  border: none;
+  border: 1px solid rgba(255,255,255,0.2);
   padding: 14px 28px;
   border-radius: 14px;
-  font-size: 1rem;
   font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(126, 200, 255, 0.35);
+  transition: 0.3s ease;
+  box-shadow:
+    0 8px 25px rgba(168,216,255,0.25);
 }
 
 .popup-card button:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(126, 200, 255, 0.45);
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 35px rgba(219,234,254,0.35);
 }
 
 .popup-card button:active {
@@ -1030,7 +1034,10 @@ body {
   right: 25px;
   transform: rotate(30deg);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+ box-shadow:
+0 0 0 10px #111,
+0 0 0 15px #1f2937,
+0 0 40px rgba(219,234,254,0.2);
 }
 
 .vinyl-arm::before {
@@ -1081,4 +1088,12 @@ body {
   .countdown-bottom {
     font-size: 0.95rem;
   }
+}
+.countdown-top {
+  color: #f5f9ff;
+  text-shadow: 0 0 18px rgba(168,216,255,0.15);
+}
+
+.countdown-bottom {
+  color: #dbeafe;
 }
