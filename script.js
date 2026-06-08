@@ -481,6 +481,39 @@ function typeLetter() {
       index++;
     }
 
-    setTimeout(typeLetter, 18);
+    setTimeout(typeLetter, 20);
+  }
+}
+
+function cakeSurprise() {
+  for (let i = 0; i < 40; i++) {
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+
+    confetti.style.left = Math.random() * window.innerWidth + "px";
+    confetti.style.top = "0px";
+    confetti.style.background =
+      ["#ff69b4", "#7ec8ff", "#ffd700", "#ff8c94"][
+        Math.floor(Math.random() * 4)
+      ];
+
+    document.body.appendChild(confetti);
+
+    confetti.animate(
+      [
+        { transform: "translateY(0) rotate(0deg)", opacity: 1 },
+        {
+          transform: `translateY(${window.innerHeight}px)
+          rotate(${Math.random() * 720}deg)`,
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 2500,
+        easing: "ease-out",
+      }
+    );
+
+    setTimeout(() => confetti.remove(), 2500);
   }
 }
