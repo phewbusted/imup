@@ -297,6 +297,9 @@ body {
   color: #d9eeff;
   font-size: 0.95rem;
   word-break: break-word;
+
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .letter-card p a {
