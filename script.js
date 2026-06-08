@@ -517,3 +517,14 @@ function cakeSurprise() {
     setTimeout(() => confetti.remove(), 2500);
   }
 }
+window.addEventListener("load", () => {
+  const music = document.getElementById("bgMusic");
+  const cover = document.getElementById("albumCover");
+
+  music.play().catch(() => {});
+
+  cover.classList.add("playing");
+
+  const btn = document.getElementById("musicBtn");
+  btn.innerHTML = "⏸ Pause Music";
+});
